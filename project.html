@@ -8202,7 +8202,7 @@ Dep. Variable:                  price   R-squared:                       0.575
 Model:                            OLS   Adj. R-squared:                  0.572
 Method:                 Least Squares   F-statistic:                     169.6
 Date:                Tue, 12 Dec 2023   Prob (F-statistic):           1.06e-91
-Time:                        02:18:13   Log-Likelihood:                -5119.6
+Time:                        22:04:32   Log-Likelihood:                -5119.6
 No. Observations:                 506   AIC:                         1.025e+04
 Df Residuals:                     501   BIC:                         1.027e+04
 Df Model:                           4                                         
@@ -8297,7 +8297,7 @@ Dep. Variable:                 lprice   R-squared:                       0.611
 Model:                            OLS   Adj. R-squared:                  0.608
 Method:                 Least Squares   F-statistic:                     196.9
 Date:                Tue, 12 Dec 2023   Prob (F-statistic):          2.50e-101
-Time:                        02:18:13   Log-Likelihood:                -26.367
+Time:                        22:04:33   Log-Likelihood:                -26.367
 No. Observations:                 506   AIC:                             62.73
 Df Residuals:                     501   BIC:                             83.87
 Df Model:                           4                                         
@@ -8393,7 +8393,7 @@ Dep. Variable:                 lprice   R-squared:                       0.612
 Model:                            OLS   Adj. R-squared:                  0.609
 Method:                 Least Squares   F-statistic:                     197.4
 Date:                Tue, 12 Dec 2023   Prob (F-statistic):          1.77e-101
-Time:                        02:18:13   Log-Likelihood:                -26.021
+Time:                        22:04:33   Log-Likelihood:                -26.021
 No. Observations:                 506   AIC:                             62.04
 Df Residuals:                     501   BIC:                             83.18
 Df Model:                           4                                         
@@ -8488,8 +8488,9 @@ Notes:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>p_value =  0.0004106959052589146
-We reject the null hypothesis at the 1% level.
+<pre>T-statistic: -7.640950055881843
+P-value: 0.9999999999999447
+We do not reject the null hypothesis at the 1% level.
 </pre>
 </div>
 </div>
@@ -8534,7 +8535,7 @@ We reject the null hypothesis at the 1% level.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>p_value =  0.0004106959052589146
+<pre>p_value =  0.0004106959052589233
 We reject the null hypothesis at the 1% level.
 </pre>
 </div>
@@ -8650,8 +8651,8 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Critical value: -1.6479068539295052
-t-stat: -3.6235808366093543
+<pre>p_value: 0.0003202080646092541
+t-stat: -3.6235808366097197
 We reject the null hypothesis at the 10.0 % level.
 </pre>
 </div>
@@ -8725,8 +8726,8 @@ We reject the null hypothesis at the 10.0 % level.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>F Statistic: 33.34883596283161
-Critical Value: 2.3132002236303255
+<pre>F Statistic: 33.348835962831544
+p-value: 5.058752845122452e-14
 Reject the null hypothesis
 </pre>
 </div>
@@ -8810,8 +8811,8 @@ $$</p>
 
 <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.10</span>  <span class="c1"># 10% significance level</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'P_Value: </span><span class="si">{</span><span class="n">p_value</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'F_Statistic: </span><span class="si">{</span><span class="n">F_statistic</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'P-Value: </span><span class="si">{</span><span class="n">p_value</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'F-Statistic: </span><span class="si">{</span><span class="n">F_statistic</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">p_value</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">'Reject the null hypothesis'</span><span class="p">)</span>
@@ -8829,8 +8830,8 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>F Statistic: 10798305112.262835
-Critical Value: 2.3132002236303255
+<pre>P-Value: 0.0
+F-Statistic: 10798305112.262833
 Reject the null hypothesis
 </pre>
 </div>
@@ -8944,8 +8945,8 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Critical value: -1.6479068539295052
-t-stat: 665984.3136755032
+<pre>P-value: 0.0
+t-stat: 77853.88070132479
 We reject the null hypothesis at the 10.0 % level.
 </pre>
 </div>
@@ -9058,8 +9059,8 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>F Statistic: 37988.1757677307
-Critical Value: 1.9561124604463698
+<pre>P-Value: 0.0
+F-Statistic: 37988.17576773106
 Reject the null hypothesis
 </pre>
 </div>
@@ -9177,8 +9178,8 @@ proptax can change between the two groups of observations. State and test $H_0$.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>F Statistic: 6926.010531682484
-Critical Value: 2.3132002236303255
+<pre>P-Value: 0.0
+F-Statistic: 6926.010531682471
 Reject the null hypothesis
 </pre>
 </div>
@@ -9331,8 +9332,8 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>critical_value =  1.9561124604463698
-f_statistic =  6.798893253091316
+<pre>P-value =  2.4672073438901628e-05
+F-statistic =  6.798893253091291
 We reject the null hypothesis at the 1% level.
 </pre>
 </div>
@@ -9396,8 +9397,8 @@ We reject the null hypothesis at the 1% level.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>critical_value =  1.9561124604463698
-f_statistic =  17.976382571313184
+<pre>P-value =  8.329911128391951e-14
+F-statistic =  17.97638257131299
 We reject the null hypothesis at the 1% level.
 </pre>
 </div>
@@ -9461,8 +9462,8 @@ We reject the null hypothesis at the 1% level.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>critical_value =  1.9561124604463698
-f_statistic =  18.27326684941466
+<pre>P-value: 1.0205916389188528e-12
+F-statistic =  16.50987293865801
 We reject the null hypothesis at the 1% level.
 </pre>
 </div>
@@ -9539,7 +9540,7 @@ We reject the null hypothesis at the 1% level.
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>==================================================
 Variables causing heteroskedasticity:
-proptax: p-value = 9.656065965529615e-05
+proptax: p-value = 9.65606596552974e-05
 ==================================================
                             WLS Regression Results                            
 ==============================================================================
@@ -9547,7 +9548,7 @@ Dep. Variable:                  price   R-squared:                       0.894
 Model:                            WLS   Adj. R-squared:                  0.893
 Method:                 Least Squares   F-statistic:                     1053.
 Date:                Tue, 12 Dec 2023   Prob (F-statistic):          3.07e-242
-Time:                        02:18:13   Log-Likelihood:                -5452.0
+Time:                        22:04:33   Log-Likelihood:                -5452.0
 No. Observations:                 506   AIC:                         1.091e+04
 Df Residuals:                     501   BIC:                         1.094e+04
 Df Model:                           4                                         
@@ -9571,14 +9572,6 @@ Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 [2] The smallest eigenvalue is 2.19e-14. This might indicate that there are
 strong multicollinearity problems or that the design matrix is singular.
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/tmp/ipykernel_15480/2551227337.py:7: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  p_value = results22.pvalues[i]
 </pre>
 </div>
 </div>
@@ -9611,7 +9604,7 @@ Dep. Variable:                  price   R-squared:                       0.575
 Model:                            OLS   Adj. R-squared:                  0.572
 Method:                 Least Squares   F-statistic:                     169.6
 Date:                Tue, 12 Dec 2023   Prob (F-statistic):           1.06e-91
-Time:                        02:18:13   Log-Likelihood:                -5119.6
+Time:                        22:04:33   Log-Likelihood:                -5119.6
 No. Observations:                 506   AIC:                         1.025e+04
 Df Residuals:                     501   BIC:                         1.027e+04
 Df Model:                           4                                         
@@ -9633,6 +9626,7 @@ Kurtosis:                      12.673   Cond. No.                         546.
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
 </pre>
 </div>
 </div>
@@ -10884,7 +10878,7 @@ Dep. Variable:               Real GDP   R-squared:                       0.244
 Model:                            OLS   Adj. R-squared:                  0.229
 Method:                 Least Squares   F-statistic:                     15.69
 Date:                Tue, 12 Dec 2023   Prob (F-statistic):           1.25e-06
-Time:                        02:18:15   Log-Likelihood:                -1101.1
+Time:                        22:04:36   Log-Likelihood:                -1101.1
 No. Observations:                 100   AIC:                             2208.
 Df Residuals:                      97   BIC:                             2216.
 Df Model:                           2                                         
@@ -11006,7 +11000,7 @@ Dep. Variable:               Real GDP   R-squared:                       0.253
 Model:                            GLS   Adj. R-squared:                  0.238
 Method:                 Least Squares   F-statistic:                     16.45
 Date:                Tue, 12 Dec 2023   Prob (F-statistic):           7.07e-07
-Time:                        02:18:15   Log-Likelihood:                -1078.5
+Time:                        22:04:36   Log-Likelihood:                -1078.5
 No. Observations:                 100   AIC:                             2163.
 Df Residuals:                      97   BIC:                             2171.
 Df Model:                           2                                         
@@ -11318,8 +11312,8 @@ inflation, lag 2 inflation. What is the number of observations and why?</strong>
 Dep. Variable:               Real GDP   R-squared:                       0.184
 Model:                            OLS   Adj. R-squared:                  0.149
 Method:                 Least Squares   F-statistic:                     5.302
-Date:                Mon, 11 Dec 2023   Prob (F-statistic):           0.000679
-Time:                        19:37:34   Log-Likelihood:                -1393.3
+Date:                Tue, 12 Dec 2023   Prob (F-statistic):           0.000679
+Time:                        22:04:36   Log-Likelihood:                -1393.3
 No. Observations:                  99   AIC:                             2797.
 Df Residuals:                      94   BIC:                             2810.
 Df Model:                           4                                         
@@ -11454,10 +11448,8 @@ parameter F test:         F=0.6686  , p=0.6155  , df_denom=88, df_num=4
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="45">
-<li>Divide the sample in two groups: 1900-1960 and 1961-2000. Test the stability of coefficients
-between the two periods.</li>
-</ol>
+<p><strong>45. Divide the sample in two groups: 1900-1960 and 1961-2000. Test the stability of coefficients
+between the two periods.</strong></p>
 </div>
 </div>
 </div>
